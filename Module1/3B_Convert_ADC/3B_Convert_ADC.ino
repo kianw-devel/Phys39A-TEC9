@@ -6,7 +6,6 @@ void setup() {
 }
 
 void loop() {
-  int temp;
   float totalVolt=0;
   int count = analogRead(analogPin);
   float voltage = count * Vref / 1023.0;
