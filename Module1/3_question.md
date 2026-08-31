@@ -14,3 +14,6 @@ In Serial Monitor it is easier to see the numbers changing while in Serial plott
 
 3B:
 
+Calculate this resolution in millivolts. For a 5.00 V reference it is about 4.88 mV. Explain why printing many decimal places does not, by itself, give the ADC finer physical resolution.
+
+this does 
