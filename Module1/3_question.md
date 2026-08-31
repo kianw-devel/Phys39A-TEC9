@@ -1,3 +1,5 @@
+3A:
+
 1. Do the reported values vary even when you do not touch the potentiometer?
 
 Yes they do
@@ -9,3 +11,6 @@ They change continuously. This is because of electrons moving and changing the v
 3. What does Serial Monitor reveal that is difficult to see in Serial Plotter, and vice versa?
 
 In Serial Monitor it is easier to see the numbers changing while in Serial plotter it was easier to see how much the numbers were changing by.
+
+3B:
+
