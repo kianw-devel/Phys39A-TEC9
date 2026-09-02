@@ -58,6 +58,7 @@ void loop() {
 
     float totalVolt = 0;
 
+    micros();
     // Take 1000 measurements for each averaged value
     for (int j = 0; j < 1000; j++) {
 
@@ -67,6 +68,15 @@ void loop() {
       totalVolt += voltage;
 
     }
+    time = micros();
+    float ave_conversion_time = time/1000;
+
+    Serial.print("ave_conversion_time:");
+    Serial.print(ave_conversion_time)
+    Serial.println("microseconds");
+
+
+
     float voltAve = totalVolt / 1000.0;
     volt_total += voltAve;
     ave_values[i] = voltAve;
