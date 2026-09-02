@@ -17,3 +17,9 @@ In Serial Monitor it is easier to see the numbers changing while in Serial plott
 Calculate this resolution in millivolts. For a 5.00 V reference it is about 4.88 mV. Explain why printing many decimal places does not, by itself, give the ADC finer physical resolution.
 
 this does 
+
+3C-Part B:
+
+Explain likely departures from the 1/sqrt(N) prediction, including drift, correlated pickup, quantization, and variation of the Arduino reference voltage. Averaging improves precision under these conditions, but it does not automatically improve absolute accuracy or remove calibration errors.
+
+this is because
