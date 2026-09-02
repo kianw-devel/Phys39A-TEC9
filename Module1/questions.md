@@ -34,6 +34,8 @@ When we average a bigger sample size, we get a much more accurate measuremnt of 
 
 7.What is the period, amplitude and duty-cycle of the PWM as a function of voltage?
 
+the period and amplitude stays constant while the potentiometer is not changed. the duty-cycle is a r
+
 
 8.Record the PWM high and low voltages, period, frequency, and duty cycle at two substantially different potentiometer settings. Determine which quantities change and which remain approximately fixed.
 
