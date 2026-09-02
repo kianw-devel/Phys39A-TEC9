@@ -58,21 +58,33 @@ void loop() {
 
     float totalVolt = 0;
 
+    unsigned long startTime = micros();
+
     // Take 1000 measurements for each averaged value
     for (int j = 0; j < 1000; j++) {
-
       int count = analogRead(analogPin);
       voltage = count * Vref / 1023.0;
-
       totalVolt += voltage;
 
     }
+    unsigned long endTime = micros();
+    unsigned long elapsedTime = endTime - startTime;
+
+    float conversionsPerSecond = 1000.0 * 1000000.0 / elapsedTime;
+
+
     float voltAve = totalVolt / 1000.0;
     volt_total += voltAve;
     ave_values[i] = voltAve;
 
     Serial.print("Averaged:");
     Serial.println(voltAve, 4);
+
+    Serial.print("Time for 1000 readings (us): ");
+    Serial.println(elapsedTime);
+    
+    Serial.print("Conversions per second: ");
+    Serial.println(conversionsPerSecond);
   }
   
   //calculating standard deviation for the averaged values
