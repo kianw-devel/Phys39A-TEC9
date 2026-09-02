@@ -31,6 +31,7 @@ this is because
 When we average a bigger sample size, we get a much more accurate measuremnt of what the voltage is but the code runs much slower. this is beacuse it takes longer to compute 1000 events than 1 event
 
 4:
+
 7.What is the period, amplitude and duty-cycle of the PWM as a function of voltage?
 
 
