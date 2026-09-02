@@ -58,8 +58,7 @@ void loop() {
 
     float totalVolt = 0;
 
-    unsigned long startTime = micros();
-
+    micros();
     // Take 1000 measurements for each averaged value
     for (int j = 0; j < 1000; j++) {
       int count = analogRead(analogPin);
@@ -67,10 +66,13 @@ void loop() {
       totalVolt += voltage;
 
     }
-    unsigned long endTime = micros();
-    unsigned long elapsedTime = endTime - startTime;
+    time = micros();
+    float ave_conversion_time = time/1000;
 
-    float conversionsPerSecond = 1000.0 * 1000000.0 / elapsedTime;
+    Serial.print("ave_conversion_time:");
+    Serial.print(ave_conversion_time)
+    Serial.println("microseconds");
+
 
 
     float voltAve = totalVolt / 1000.0;
