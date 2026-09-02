@@ -29,3 +29,14 @@ this is because
 6. Explain the tradeoff. Averaging over a finite interval acts as a low-pass filter: rapid fluctuations tend to cancel, but changes occurring during the averaging window are smoothed or delayed. Improved voltage precision therefore comes with reduced time resolution.
 
 When we average a bigger sample size, we get a much more accurate measuremnt of what the voltage is but the code runs much slower. this is beacuse it takes longer to compute 1000 events than 1 event
+
+4:
+
+7.What is the period, amplitude and duty-cycle of the PWM as a function of voltage?
+
+the period and amplitude stays constant while the potentiometer is not changed. the duty-cycle is a r
+
+
+8.Record the PWM high and low voltages, period, frequency, and duty cycle at two substantially different potentiometer settings. Determine which quantities change and which remain approximately fixed.
+
+9.Explain why the LED looks continuously lit even though the oscilloscope resolves individual pulses.
