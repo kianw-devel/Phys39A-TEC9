@@ -9,11 +9,11 @@ const int numSamples = 1000;
 
 // Takes 100 ADC readings and returns their average
 float averageAdcSamples() {
-
+  int count = 0;
   float totalADC = 0;
 
   for (int i = 0; i < numSamples; i++) {
-    int count = analogRead(analogPin);
+    count = analogRead(analogPin);
     totalADC += count;
   }
 
