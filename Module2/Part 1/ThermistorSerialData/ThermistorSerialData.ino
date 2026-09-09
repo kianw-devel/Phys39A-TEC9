@@ -56,34 +56,30 @@ float resistanceToCelsius(float resistance) {
 
 
 // Prints one human-readable line
-void printHumanReadable(float time_s,
-                        float averageADC,
-                        float voltage,
-                        float resistance,
-                        float temperature) {
+void printHumanReadable(float temperature) {
 
-  Serial.print("time = ");
-  Serial.print(time_s, 3);
-  Serial.print(" s    ");
+  // Serial.print("time = ");
+  // Serial.print(time_s, 3);
+  // Serial.print(" s    ");
 
-  Serial.print("average ADC = ");
-  Serial.print(averageADC, 1);
-  Serial.print(" counts    ");
+  // Serial.print("average ADC = ");
+  // Serial.print(averageADC, 1);
+  // Serial.print(" counts    ");
 
-  Serial.print("voltage = ");
-  Serial.print(voltage, 3);
-  Serial.print(" V    ");
+  // Serial.print("voltage = ");
+  // Serial.print(voltage, 3);
+  // Serial.print(" V    ");
 
-  Serial.print("resistance = ");
-  Serial.print(resistance, 2);
-  Serial.print(" kOhm    ");
+  // Serial.print("resistance = ");
+  // Serial.print(resistance, 2);
+  // Serial.print(" kOhm    ");
 
-  Serial.print("temperature = ");
-  Serial.print(temperature, 1);
-  Serial.print(" C    ");
+  // Serial.print("temperature = ");
+  Serial.println(temperature, 1);
+  // Serial.print(" C    ");
 
-  Serial.print("samples = ");
-  Serial.println(numSamples);
+  // Serial.print("samples = ");
+  // Serial.println(numSamples);
 }
 
 
@@ -122,9 +118,5 @@ void loop() {
   float time_s = elapsedTime / 1000000.0;
 
   // Print results
-  printHumanReadable(time_s,
-                     averageADC,
-                     voltage,
-                     resistance,
-                     temperature);
+  printHumanReadable(temperature);
 }
