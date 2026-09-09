@@ -34,10 +34,12 @@ When we average a bigger sample size, we get a much more accurate measurement of
 
 7.What is the period, amplitude and duty-cycle of the PWM as a function of voltage?
 
-The period is approximately 2.04ms, amplitude is 
+As the potentiometer voltage increases, the PWM duty cycle increases from 0% toward 100%. The frequency stays approximately constant at 490 Hz, so the period stays approximately constant at 2.04 ms. The PWM voltage levels, and therefore the peak-to-peak amplitude, should also remain approximately constant; changing the potentiometer voltage mainly changes the duty cycle, not the frequency or amplitude.
 
 8.Record the PWM high and low voltages, period, frequency, and duty cycle at two substantially different potentiometer settings. Determine which quantities change and which remain approximately fixed.
 
 the period and amplitude stays constant while the potentiometer is not changed. the duty-cycle changes.
 
 9.Explain why the LED looks continuously lit even though the oscilloscope resolves individual pulses.
+
+The LED looks continuously lit even though the oscilloscope resolves individual pulses because our eyes can't sense blinking that happen this fast. 
