@@ -25,8 +25,8 @@ With the potentiometer held near its midpoint, the Serial Monitor alternated bet
 
 | Quantity | Result |
 |---|---:|
-| Minimum ADC code | 511 counts |
-| Maximum ADC code | 512 counts |
+| Minimum ADC code | 0 counts |
+| Maximum ADC code | 1023 counts |
 | Midrange, $(511+512)/2$ | 511.5 counts |
 | Nominal reference voltage | 5.00 V |
 | One-count resolution, $5.00\text{ V}/1023$ | 4.89 mV/count |
