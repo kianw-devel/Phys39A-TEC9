@@ -15,9 +15,9 @@ The photograph shows the Arduino Uno at lower left, the potentiometer and LED ci
 
 ## Arduino sketches
 
+- [Blink.ino](../../Module1/Blink/Blink.ino)
 - [AnalogReadSerial.ino](../../Module1/AnalogReadSerial/AnalogReadSerial.ino)
 - [3_Convert_ADC.ino](../../Module1/3_Convert_ADC/3_Convert_ADC.ino)
-- [Blink.ino](../../Module1/Blink/Blink.ino)
 - [4_LED_Brightness.ino](../../Module1/4_LED_Brightness/4_LED_Brightness.ino)
 
 ## ADC digitization results
