@@ -92,7 +92,7 @@ $$
 - Low voltage: 0V
 - Period: 2.044 ms
 - Frequency: 489.2 Hz
-- Duty cycle: $D=(1.71\ \mathrm{V}/2.72\ \mathrm{V})\times100\%=62.9\%\approx63\%$
+- Duty cycle: $D=(1.71\ \mathrm{V}/2.72\ \mathrm{V})\times100$. The result is 62.9%, or approximately 63%.
 
 The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the fast electrical PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady intermediate output voltage.
 
