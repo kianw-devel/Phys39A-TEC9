@@ -92,13 +92,17 @@ $$
 - Low voltage: 0V
 - Period: 2.044 ms
 - Frequency: 489.2 Hz
+- Duty cycle: The trace is inverted by the oscilloscope probe polarity, so the Arduino's active/high state appears as the negative-going portion. Using the measured mean-voltage magnitude and peak-to-peak voltage,
+
+$$
+D=\frac{1.71\ \mathrm{V}}{2.72\ \mathrm{V}}\times100\%=62.9\%\approx63\%.
+$$
 
 The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the fast electrical PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady intermediate output voltage.
 
 ## Before submission
 
 - Replace the missing $N=1000$-only plot.
-- Add the directly measured PWM high voltage, low voltage, and duty cycle.
 - Commit and push this note, the sketches, screenshots, and supporting evidence.
 - Replace the Git hash on the first page with the full hash of that final commit.
 - Export the note as `A1_Kadener_Wijnaendts.pdf` and confirm that every figure is legible.
