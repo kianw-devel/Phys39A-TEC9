@@ -97,6 +97,10 @@ $$
 
 The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the fast electrical PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady intermediate output voltage.
 
+## AI-use statement
+
+We used AI to help outline, organize, and improve the wording of this evidence note. All experimental measurements came from our laboratory work, and we reviewed and verified the calculations using those measurements.
+
 ## Before submission
 
 - Replace the missing $N=1000$-only plot.
