@@ -88,11 +88,10 @@ $$
 
 ![LED PWM waveform measured with the oscilloscope.](../../Module1/4_LED_Brightness/IMG_8015.jpeg)
 
-- High voltage: **NEEDS A DIRECT MEASURED VALUE**
-- Low voltage: **NEEDS A DIRECT MEASURED VALUE**
+- High voltage: 2.72V
+- Low voltage: 0V
 - Period: 2.044 ms
 - Frequency: 489.2 Hz
-- Duty cycle: **NEEDS A DIRECT MEASURED VALUE**
 
 The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the fast electrical PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady intermediate output voltage.
 
