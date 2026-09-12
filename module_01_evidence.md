@@ -27,7 +27,7 @@ With the potentiometer held near its midpoint, the Serial Monitor alternated bet
 |---|---:|
 | Minimum ADC code | 0 counts |
 | Maximum ADC code | 1023 counts |
-| Midrange, $(511+512)/2$ | 511.5 counts |
+| Midrange, $(0+1023)/2$ | 511.5 counts |
 | Nominal reference voltage | 5.00 V |
 | One-count resolution, $5.00\text{ V}/1023$ | 4.89 mV/count |
 
@@ -50,7 +50,7 @@ The sketch collected a block of 100 individual readings and a block of 100 repor
 | 1 | 2.4974 V | 0.0018 V | about 0.0049 V (one ADC count) | 1.0000 | 1.0000 |
 | 1000 | 2.4973 V | 0.0003 V | 0.0001 V (limited by displayed precision) | 0.1774 | 0.0316 |
 
-The mean remained essentially unchanged, while the measured standard deviation fell from 1.8 mV to 0.3 mV. The measured ratio, 0.1774, is larger than the ideal independent-noise prediction of 0.0316, so the improvement was smaller than ideal. Likely causes include slow drift, correlated electrical pickup, ADC quantization, and variation in the Arduino reference voltage. Averaging reduces independent random noise and therefore improves precision, but it does not remove calibration error or guarantee better absolute accuracy.
+The mean remained unchanged, while the measured standard deviation fell from 1.8 mV to 0.3 mV. The measured ratio, 0.1774, is larger than the ideal independent-noise prediction of 0.0316, so the improvement was smaller than ideal. Likely causes include slow drift, correlated electrical pickup, ADC quantization, and variation in the Arduino reference voltage. Averaging reduces independent random noise and therefore improves precision, but it does not remove calibration error or guarantee better absolute accuracy.
 
 The saved timing output gives 160,548–160,632 microseconds for 1000 readings, corresponding to about 6225–6229 conversions per second. A representative result is therefore approximately **160.6 ms per 1000-conversion average** or **6.23 kHz**.
 
