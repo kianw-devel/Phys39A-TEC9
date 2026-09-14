@@ -9,7 +9,7 @@
 
 ## Apparatus
 
-The photograph shows the Arduino Uno at lower left, the potentiometer and LED circuit on the breadboard, the oscilloscope probe connected to the circuit, and the Tektronix TDS 210 oscilloscope displaying the PWM waveform.
+The photograph shows the Arduino Uno at lower left, the potentiometer and LED circuit on the breadboard, the oscilloscope probe connected to the circuit, and the oscilloscope displaying the PWM waveform.
 
 ![Labeled apparatus overview: Arduino Uno (lower left), potentiometer and LED circuit (center breadboard), oscilloscope probe (connected at center), and oscilloscope displaying the PWM waveform (upper right).](../../Module1/4_LED_Brightness/IMG_8015.jpeg)
 
@@ -48,7 +48,7 @@ The centered Serial Plotter comparison shows the transition between the 100-poin
 
 ### Required $N=1000$-only plot
 
-**INSERT THE REQUIRED SERIAL PLOTTER SCREENSHOT SHOWING ONLY THE $N=1000$ BLOCK.** The repository does not currently contain this required figure.
+![Serial Plotter screenshot showing only the N=1000 averaged-voltage block.](../../Module1/3_Convert_ADC/3C/Serial_Plotter_Averaged.png)
 
 ### Averaging table
 
@@ -61,7 +61,7 @@ The centered Serial Plotter comparison shows the transition between the 100-poin
 
 ![Long-average mean, sample standard deviation, and measured and predicted ratios.](../../Module1/3_Convert_ADC/3C/Averaged_Mean-Std-Ratio.png)
 
-The smallest voltage jump visible in the saved averaged output is 0.0001 V (0.1 mV), limited by the four-decimal-place display. This value should be confirmed using the required $N=1000$-only Serial Plotter screenshot.
+The smallest voltage jump visible in the $N=1000$ plot is $2.31690\ \mathrm{V}-2.31680\ \mathrm{V}=0.00010\ \mathrm{V}=0.10\ \mathrm{mV}$.
 
 The measured noise ratio was 0.1774, compared with the ideal prediction
 
@@ -103,7 +103,6 @@ We used AI to help outline, organize, and improve the wording of this evidence n
 
 ## Before submission
 
-- Replace the missing $N=1000$-only plot.
 - Commit and push this note, the sketches, screenshots, and supporting evidence.
 - Replace the Git hash on the first page with the full hash of that final commit.
 - Export the note as `A1_Kadener_Wijnaendts.pdf` and confirm that every figure is legible.
