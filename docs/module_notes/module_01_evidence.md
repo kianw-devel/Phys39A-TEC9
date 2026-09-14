@@ -5,7 +5,7 @@
 | Team members | Ben Kadener and Kian Wijnaendts |
 | Date | September 9, 2026 |
 | Repository | [Phys39A-TEC9](https://github.com/kianw-devel/Phys39A-TEC9) |
-| Full Git commit hash | **UPDATE AFTER FINAL COMMIT AND PUSH** |
+| Full Git commit hash | 32c4f26a5916e2b06f4eea9e2f9afeecf6872a5a|
 
 ## Apparatus
 
