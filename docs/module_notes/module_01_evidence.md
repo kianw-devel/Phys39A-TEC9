@@ -22,7 +22,7 @@ The photograph shows the Arduino Uno at lower left, the potentiometer and LED ci
 
 ## ADC digitization results
 
-With the potentiometer held near its selected midrange position, the measured ADC readings occupied the neighboring integer codes 511 and 512.
+With the potentiometer held near its selected midrange position, the measured ADC readings hovered between 511 and 512.
 
 ![Serial Monitor showing ADC codes 511 and 512.](../../Module1/3_Convert_ADC/3ASerialMonitor.png)
 
@@ -32,13 +32,13 @@ With the potentiometer held near its selected midrange position, the measured AD
 | Maximum ADC value | 1023 counts |
 | Midrange ADC value, $(0+1023)/2$ | 511.5 counts |
 
-For the nominal 5.00 V reference, the one-count ADC voltage resolution is
+For the 5.00 V reference, the one-count ADC voltage resolution is
 
 $$
 \Delta V=\frac{5.00\ \mathrm{V}}{1023}=0.00488\ \mathrm{V}=4.88\ \mathrm{mV/count}.
 $$
 
-The readings occupy discrete levels because the Arduino Uno uses a 10-bit ADC, which represents the input using only the 1024 integer codes from 0 through 1023. Small electrical noise and  reference-voltage variation caused the stationary reading to alternate between adjacent codes. Printing additional decimal places cannot create finer physical ADC resolution.
+The readings occupy discrete levels because the Arduino Uno uses a 10-bit ADC, which represents the input using only the 1024 integer codes from 0 through 1023. Small electrical noise and  reference-voltage variation caused the reading to alternate. Printing additional decimal places cannot create finer physical ADC resolution.
 
 ## Averaging results
 
