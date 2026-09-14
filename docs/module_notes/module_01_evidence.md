@@ -38,7 +38,7 @@ $$
 \Delta V=\frac{5.00\ \mathrm{V}}{1023}=0.00488\ \mathrm{V}=4.88\ \mathrm{mV/count}.
 $$
 
-The readings occupy discrete levels because the Arduino Uno uses a 10-bit ADC, which represents the input using only the 1024 integer codes from 0 through 1023. Small electrical noise, reference-voltage variation, and quantization caused the stationary reading to alternate between adjacent codes. Printing additional decimal places cannot create finer physical ADC resolution.
+The readings occupy discrete levels because the Arduino Uno uses a 10-bit ADC, which represents the input using only the 1024 integer codes from 0 through 1023. Small electrical noise and  reference-voltage variation caused the stationary reading to alternate between adjacent codes. Printing additional decimal places cannot create finer physical ADC resolution.
 
 ## Averaging results
 
@@ -46,7 +46,7 @@ The centered Serial Plotter comparison shows the transition between the 100-poin
 
 ![Centered transition between the 100-point N=1 and N=1000 voltage blocks.](../../Module1/3_Convert_ADC/3C/Serial_Plotter_3C.png)
 
-### Required $N=1000$-only plot
+### $N=1000$-only plot
 
 ![Serial Plotter screenshot showing only the N=1000 averaged-voltage block.](../../Module1/3_Convert_ADC/3C/Serial_Plotter_Averaged.png)
 
@@ -73,7 +73,7 @@ The measured reduction was smaller than the ideal prediction because the errors 
 
 ## Time for 1000 readings
 
-The measured times ranged from 160,548 to 160,632 microseconds for 1000 readings, with conversion rates of approximately 6225 to 6229 conversions per second. A representative result is **160.6 ms for 1000 readings**, or approximately **6.23 kHz**.
+The measured times in this screenshot ranged from 160,548 to 160,632 microseconds for 1000 readings, with conversion rates of approximately 6225 to 6229 conversions per second. A representative result is **160.6 ms for 1000 readings**, or approximately **6.23 kHz**.
 
 ![Measured time for 1000 readings and corresponding conversion rate.](../../Module1/3_Convert_ADC/3D/Time_1000_Reading-Conversions_Per_Second.png)
 
@@ -95,14 +95,8 @@ $$
 - Frequency: 489.2 Hz
 - Duty cycle: $D=(t_{\mathrm{HIGH}}/T)\times100=(1.2\ \mathrm{div}/4.1\ \mathrm{div})\times100=29.3\text{ percent}\approx30\text{ percent}$
 
-The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the fast electrical PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady intermediate output voltage.
+The oscilloscope showed the voltage physically present at the output pin, including the individual high and low pulses and their timing. The Serial Monitor and Serial Plotter showed values chosen and printed by the program rather than the PWM waveform itself. The oscilloscope therefore revealed that the apparently continuous LED brightness was produced by rapid switching, not by a steady output voltage.
 
 ## AI-use statement
 
 We used AI to help outline, organize, and improve the wording of this evidence note. All experimental measurements came from our laboratory work, and we reviewed and verified the calculations using those measurements.
-
-## Before submission
-
-- Commit and push this note, the sketches, screenshots, and supporting evidence.
-- Replace the Git hash on the first page with the full hash of that final commit.
-- Export the note as `A1_Kadener_Wijnaendts.pdf` and confirm that every figure is legible.
